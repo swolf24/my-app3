@@ -1,0 +1,170 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const windowWidth = Dimensions.get('window').width;
+
+export default StyleSheet.create({
+  scrollContainer: {
+    flexGrow: 1,
+    paddingBottom: 40,
+  },
+  container: {
+    flex: 1,
+    backgroundColor: '#F5F5F5',
+    alignItems: 'center',
+    paddingTop: 40,
+    minHeight: '100%',
+  },
+  headerContainer: {
+    width: '100%',
+    padding: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 20,
+  },
+  headerTitle: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#1B2541',
+    marginRight: 10,
+  },
+  summaryContainer: {
+    width: windowWidth * 0.9,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 15,
+    padding: 12,
+    marginBottom: 15,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+
+  },
+  summaryTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 10,
+    color: '#1B2541',
+  },
+  summaryContent: {
+    alignItems: 'center',
+    paddingVertical: 5,
+  },
+  summaryText: {
+    fontSize: 16,
+    marginVertical: 1,
+    color: '#4B7BF5',
+  },
+  totalAllDistances: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#1B2541',
+    marginBottom: 5,
+    borderBottomWidth: 1,
+    borderBottomColor: '#4B7BF5',
+    paddingBottom: 3,
+  },
+  dateContainer: {
+    width: windowWidth * 0.9,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 15,
+    padding: 12,
+    marginBottom: 20,
+    elevation: 2,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+  },
+  dateText: {
+    fontSize: 16,
+    color: '#4B7BF5',
+    flex: 1,
+  },
+  inputContainer: {
+    width: windowWidth * 0.9,
+    alignItems: 'center',
+    paddingBottom: 80,
+    marginBottom: 40, 
+  },
+  // ... existing styles ...
+
+sportSelector: {
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '100%',
+  gap: 15,
+  marginVertical: 10,
+},
+sportButton: {
+  flex: 1,
+  maxWidth: 100,
+  minWidth: 80,
+  borderRadius: 10,
+  marginHorizontal: 5,
+},
+  input: {
+    marginBottom: 15,
+    backgroundColor: '#FFFFFF',
+    width: '100%',
+  },
+  button: {
+    marginVertical: 8,
+    width: '100%',
+    borderRadius: 25,
+  },
+  dateButton: {
+    backgroundColor: '#F5F5F5',
+    borderColor: '#4B7BF5',
+    borderWidth: 1,
+  },
+  dateButtonLabel: {
+    fontSize: 16,
+    padding: 5,
+  },
+  modalContent: {
+    backgroundColor: 'white',
+    margin: 10,
+    padding: 20,
+    borderRadius: 15,
+    maxHeight: '90%',
+    width: '95%',
+    alignSelf: 'center',
+  },
+  exerciseCard: {
+    marginBottom: 10,
+    padding: 5,
+    backgroundColor: '#fff',
+    borderRadius: 10,
+  },
+  exerciseTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 8,
+    color: '#1B2541',
+  },
+  exerciseDetails: {
+    fontSize: 16,
+    marginVertical: 2,
+    color: '#4B7BF5',
+  },
+  totalSection: {
+    backgroundColor: '#F0F4FF',
+    padding: 15,
+    borderRadius: 10,
+    marginBottom: 20,
+  },
+  modalTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 20,
+    color: '#1B2541',
+  },
+});
